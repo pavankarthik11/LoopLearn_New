@@ -112,8 +112,8 @@ LoopLearn/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/PrasunTellakula/loop-learn.git
-cd loop-learn
+git clone https://github.com/pavankarthik11/LoopLearn_New.git
+cd LoopLearn_New
 ```
 
 ### 2. Backend Setup
@@ -210,6 +210,6 @@ This project is for educational / portfolio purposes. Feel free to fork and modi
 ---
 
 ## 👨‍💻 Author
-**Prasun Tellakula** — Full-Stack Developer
-- 🔗 GitHub: [@PrasunTellakula](https://github.com/PrasunTellakula)
+**Sai Pavan Karthik** — Full-Stack Developer
+- 🔗 GitHub: [@pavankarthik11](https://github.com/pavankarthik11)
 - 🌐 Live Project: [loop-learn-five.vercel.app](https://loop-learn-five.vercel.app/)
