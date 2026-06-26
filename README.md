@@ -2,8 +2,6 @@
 
 **A peer-to-peer skill exchange platform** where users can **swap skills** for free or **learn from others** for a fee. Think of it as a marketplace for knowledge — you teach what you know, and learn what you don't.
 
-### 🌐 [Live Demo → loop-learn-five.vercel.app](https://loop-learn-five.vercel.app/)
-
 ---
 
 ## 📸 Overview
@@ -126,7 +124,26 @@ Create your `.env` file by copying the template:
 ```bash
 cp .env.example .env
 ```
-*(Ensure to fill in `PORT`, `MONGODB_URI`, `CLOUDINARY` keys, `JWT` secrets, and `GMAIL/RESEND` keys).*
+
+Fill in the required values in `Backend/.env`:
+| Variable | Description |
+|----------|-------------|
+| `PORT` | The port the backend will run on (default: 8000) |
+| `BASE_URL` | The base URL of the backend (default: http://localhost:8000) |
+| `MONGODB_URI` | Your MongoDB Atlas connection string |
+| `CORS_ORIGIN` | The URL of your frontend (e.g., http://localhost:5173 for local) |
+| `ACCESS_TOKEN_SECRET` | Secret for JWT access tokens |
+| `ACCESS_TOKEN_EXPIRY` | Expiry time (e.g., 1d) |
+| `REFRESH_TOKEN_SECRET` | Secret for JWT refresh tokens |
+| `REFRESH_TOKEN_EXPIRY` | Expiry time (e.g., 10d) |
+| `CLOUDINARY_CLOUD_NAME` | Cloudinary configuration |
+| `CLOUDINARY_API_KEY` | Cloudinary configuration |
+| `CLOUDINARY_API_SECRET` | Cloudinary configuration |
+| `GMAIL_USER` | Your Gmail address for sending OTPs |
+| `GMAIL_PASS` | Gmail App Password |
+| `RESEND_API_KEY` | Resend API key (optional) |
+| `RESEND_FROM_EMAIL` | Sender email address for Resend |
+| `DAILY_API_KEY` | Daily.co API key for video calls |
 
 Start the backend:
 ```bash
@@ -145,7 +162,15 @@ Create your `.env` file:
 ```bash
 cp .env.example .env
 ```
-*(Ensure to fill in `VITE_BACKEND_URL`, `VITE_CLERK_PUBLISHABLE_KEY`, etc.)*
+
+Fill in `Frontend/.env`:
+| Variable | Description |
+|----------|-------------|
+| `VITE_CLERK_PUBLISHABLE_KEY` | Your Clerk authentication publishable key |
+| `VITE_CURRENCY` | Currency symbol (default: `$`) |
+| `VITE_BACKEND_URL` | Backend API URL (default: `http://localhost:8000`) |
+| `VITE_CLOUDINARY_CLOUD_NAME` | Cloudinary cloud name for direct frontend uploads |
+| `VITE_CLOUDINARY_UPLOAD_PRESET`| Cloudinary unsigned upload preset |
 
 Start the frontend:
 ```bash
@@ -212,4 +237,3 @@ This project is for educational / portfolio purposes. Feel free to fork and modi
 ## 👨‍💻 Author
 **Sai Pavan Karthik** — Full-Stack Developer
 - 🔗 GitHub: [@pavankarthik11](https://github.com/pavankarthik11)
-- 🌐 Live Project: [loop-learn-five.vercel.app](https://loop-learn-five.vercel.app/)
