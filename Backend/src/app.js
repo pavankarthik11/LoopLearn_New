@@ -9,7 +9,7 @@ const app = express();
 // ──────────────────────
 // 🔐 Global Middlewares
 const allowedOrigins = [
-  process.env.CORS_ORIGIN,                // Production: https://your-frontend-domain.com
+  process.env.CORS_ORIGIN,                // Production: https://loop-learn-five.vercel.app
   "http://localhost:5173",                  // Local dev
   "http://localhost:3000",                  // Local dev alt
 ];
